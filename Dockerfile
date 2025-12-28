@@ -14,7 +14,7 @@ RUN git clone https://github.com/cathugger/mkp224o.git /tmp/mkp224o && \
     ./autogen.sh && \
     ./configure && \
     make && \
-    make install && \
+    cp mkp224o /usr/local/bin/ && \
     rm -rf /tmp/mkp224o
 
 COPY entrypoint.sh /entrypoint.sh
