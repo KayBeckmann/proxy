@@ -6,6 +6,7 @@ RUN apt-get update && apt-get install -y \
     build-essential \
     libsodium-dev \
     autoconf \
+    gosu \
     && rm -rf /var/lib/apt/lists/*
 
 # Build mkp224o from source

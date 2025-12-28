@@ -53,4 +53,4 @@ HiddenServicePort $ONION_PORT 127.0.0.1:$LOCAL_PORT
 EOF
 
 echo "Starting Tor..."
-exec tor -f "$TORRC"
+exec gosu debian-tor tor -f "$TORRC"
