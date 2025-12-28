@@ -1,0 +1,5 @@
+# Tor Hidden Service Keys (GEHEIM!)
+hidden_service/
+
+# Environment mit Konfiguration
+.env
