@@ -1,0 +1,9 @@
+services:
+  tor-proxy:
+    build: .
+    restart: unless-stopped
+    volumes:
+      - ./hidden_service:/var/lib/tor/hidden_service
+    env_file:
+      - .env
+    network_mode: host
